@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Money</title>
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="balanse">
+                <h2>Your Balanse</h2>
+                <h1>1 232 700</h1>
+            </div>
+            <div class="income-extensive-date">
+                <div class="income-extensive">
+                    <div>
+                        <h4>Income</h4>
+                        <p id="money-plus" class="money plus">+10 000</p>
+                        <svg class="svg-icon">
+                            <use
+                                href="./img/symbol.svg#icon-ukraine-hryvna-svgrepo-com"
+                            ></use>
+                        </svg>
+                    </div>
+                    <div>
+                        <h4>Expense</h4>
+                        <p id="money-minus" class="money minus">-2 390</p>
+                        <svg class="svg-icon">
+                            <use
+                                href="./img/symbol.svg#icon-ukraine-hryvna-svgrepo-com"
+                            ></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <button id="sel-day" class="btn-select-date date-selected">
+                    Day
+                </button>
+                <button id="sel-week" class="btn-select-date">Week</button>
+                <button id="sel-month" class="btn-select-date">Month</button>
+                <div class="nav-date-calendar">
+                    <div class="nav-date">
+                        <svg class="svg-icon">
+                            <use
+                                href="./img/symbol.svg#icon-previous-svgrepo-com"
+                            ></use>
+                        </svg>
+                        <p class="current-select-date"></p>
+                        <svg class="svg-icon">
+                            <use
+                                href="./img/symbol.svg#icon-next-svgrepo-com"
+                            ></use>
+                        </svg>
+                    </div>
+                    <svg id="calendar" class="svg-icon calendar-icon">
+                        <use
+                            href="./img/symbol.svg#icon-calendar-svgrepo-com"
+                        ></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="income-extensive-extra"></div>
+        </div>
+        <div class="container-transaction">
+            <div class="adding-transaction">
+                <div class="adding-transaction-btn">
+                    <button id="add-prop" class="btn-prop-show">
+                        <svg id="add-prop-icon" class="svg-icon-adding">
+                            <use
+                                href="./img/symbol.svg#icon-plus-circle-svgrepo-com"
+                            ></use>
+                        </svg>
+                    </button>
+
+                    <button id="hide-prop" class="btn-prop-show display-none">
+                        <svg class="svg-icon-adding">
+                            <use
+                                href="./img/symbol.svg#icon-up-arrow-svgrepo-com"
+                            ></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="transaction-property display-none">
+                    <h5>Category of payment</h5>
+                    <select name="pets" id="pet-select">
+                        <option value="">--Please choose category--</option>
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="hamster">Hamster</option>
+                        <option value="parrot">Parrot</option>
+                        <option value="spider">Spider</option>
+                        <option value="goldfish">Goldfish</option>
+                    </select>
+                    <h5>Subcategory of payment</h5>
+                    <select name="pets" id="pet-select">
+                        <option value="">--Please choose subcategory--</option>
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="hamster">Hamster</option>
+                        <option value="parrot">Parrot</option>
+                        <option value="spider">Spider</option>
+                        <option value="goldfish">Goldfish</option>
+                    </select>
+                    <h5>Payment accaunt</h5>
+                    <select name="pets" id="pet-select">
+                        <option value="">--Please choose accaunt--</option>
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="hamster">Hamster</option>
+                        <option value="parrot">Parrot</option>
+                        <option value="spider">Spider</option>
+                        <option value="goldfish">Goldfish</option>
+                    </select>
+                    <h5>Value payment</h5>
+                    <input type="text" />
+                    <br />
+                    <button disabled="disabled">Create</button>
+                </div>
+            </div>
+            <div class="trasactions">
+                <ul class="list">
+                    <li class="card">
+                        <img
+                            class="icon-trans"
+                            src="./img/shopping-basket.png"
+                            alt=""
+                            srcset=""
+                        />
+                        <div class="trans-info">
+                            <p class="trans-type">Продукти</p>
+                            <div class="trans-accaunt">
+                                <svg class="svg-icon-accaunt spend">
+                                    <use
+                                        href="./img/symbol.svg#icon-credit-card-svgrepo-com"
+                                    ></use>
+                                </svg>
+                                <p class="name-accaunt">Monobank</p>
+                            </div>
+                            <div class="budget-info">
+                                <div id="myProgress">
+                                    <div id="myBar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trans-values">
+                            <p class="trans-value spend">-12890</p>
+                            <p class="trans-date">16.06.24</p>
+                            <p class="budget-spend">34%</p>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <img
+                            class="icon-trans"
+                            src="./img/deposit.png"
+                            alt=""
+                            srcset=""
+                        />
+                        <div class="trans-info">
+                            <p class="trans-type">Заробітна плата</p>
+                            <div class="trans-accaunt">
+                                <svg class="svg-icon-accaunt income">
+                                    <use
+                                        href="./img/symbol.svg#icon-credit-card-svgrepo-com"
+                                    ></use>
+                                </svg>
+                                <p class="name-accaunt">Ощадбанк</p>
+                            </div>
+                            <div class="budget-info display-none">
+                                <div id="myProgress">
+                                    <div id="myBar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trans-values">
+                            <p class="trans-value income">+62470</p>
+                            <p class="trans-date">17.06.24</p>
+                            <p class="budget-spend display-none">34%</p>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <img
+                            class="icon-trans"
+                            src="./img/transfer.png"
+                            alt=""
+                            srcset=""
+                        />
+                        <div class="trans-info">
+                            <p class="trans-type">Переказ коштів</p>
+                            <div class="trans-accaunt">
+                                <svg class="svg-icon-accaunt spend">
+                                    <use
+                                        href="./img/symbol.svg#icon-credit-card-svgrepo-com"
+                                    ></use>
+                                </svg>
+                                <p class="name-accaunt">Ощадбанк</p>
+                            </div>
+                            <div class="trans-accaunt">
+                                <svg class="svg-icon-accaunt income">
+                                    <use
+                                        href="./img/symbol.svg#icon-credit-card-svgrepo-com"
+                                    ></use>
+                                </svg>
+                                <p class="name-accaunt">Monobank</p>
+                            </div>
+                        </div>
+                        <div class="trans-values">
+                            <p class="trans-value transfer">5000</p>
+                            <p class="trans-date">18.06.24</p>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <img
+                            class="icon-trans"
+                            src="./img/jar.png"
+                            alt=""
+                            srcset=""
+                        />
+                        <div class="trans-info">
+                            <p class="trans-type">Накопичення (Відпустка)</p>
+                            <div class="trans-accaunt">
+                                <svg class="svg-icon-accaunt target">
+                                    <use
+                                        href="./img/symbol.svg#icon-credit-card-svgrepo-com"
+                                    ></use>
+                                </svg>
+                                <p class="name-accaunt">Monobank</p>
+                            </div>
+                            <div class="budget-info">
+                                <div id="myProgress">
+                                    <div id="myBar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trans-values">
+                            <p class="trans-value target">4500</p>
+                            <p class="trans-date">13.06.24</p>
+                            <p class="budget-spend">24%</p>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <img
+                            class="icon-trans"
+                            src="./img/restoran.png"
+                            alt=""
+                            srcset=""
+                        />
+                        <div class="trans-info">
+                            <p class="trans-type">Ресторан</p>
+                            <div class="trans-accaunt">
+                                <svg class="svg-icon-accaunt spend">
+                                    <use
+                                        href="./img/symbol.svg#icon-simple-wallet-line-drawing-svgrepo-com"
+                                    ></use>
+                                </svg>
+                                <p class="name-accaunt">Готівка</p>
+                            </div>
+                            <div class="budget-info display-none">
+                                <div id="myProgress">
+                                    <div id="myBar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trans-values">
+                            <p class="trans-value spend">-340</p>
+                            <p class="trans-date">16.06.24</p>
+                            <p class="budget-spend display-none">34%</p>
+                        </div>
+                    </li>
+                    <!-- <li class="card no-pay">
+                        <p>No payments</p>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="./js/app.js"></script>
+</html>

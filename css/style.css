@@ -1,0 +1,416 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, Roboto;
+    background: linear-gradient(45deg, #eccdf5, #c4def1);
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.container,
+.container-transaction {
+    width: 380px;
+    background-color: #eee5;
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.container-transaction {
+    min-height: 420px;
+}
+
+.balanse,
+.income-extensive-date,
+.calendar-block,
+.transaction,
+.adding-transaction {
+    background-color: #fff;
+    border-radius: inherit;
+    padding: inherit;
+}
+
+.income-extensive-date,
+.calendar-block {
+    margin-top: 20px;
+}
+
+.adding-transaction {
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+.adding-transaction-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed blueviolet;
+    border-radius: 16px;
+    /* padding-bottom: 8px; */
+}
+
+.transaction-property {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 12px 20px;
+}
+
+/* .display-none {
+    display: none !important;
+} */
+
+.income-extensive {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.money {
+    display: inline-block;
+    font-size: 20px;
+}
+
+.money.plus {
+    color: green;
+}
+
+.money.minus {
+    color: red;
+}
+
+.svg-icon {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+}
+
+.btn-prop-show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    border: none;
+    padding: 4px;
+
+    &:not(:disabled):hover {
+        padding: 2px;
+    }
+}
+
+.svg-icon-adding {
+    fill: blueviolet;
+    width: 32px;
+    height: 32px;
+    /* padding: 4px; */
+}
+
+/* .svg-icon-adding:hover {
+    width: 32px;
+    height: 32px;
+    fill: rgb(134, 5, 255);
+    padding: 2px; 
+} */
+
+.balanse h1,
+h2 {
+    color: indigo;
+}
+
+.btn-select-date {
+    display: inline-block;
+    font-size: 18px;
+    width: 74px;
+    height: 28px;
+    color: indigo;
+    background-color: #ffffff;
+    border-radius: 14px;
+    /* border: 1px solid indigo; */
+    border: none;
+}
+
+.btn-select-date:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-select-date.date-selected {
+    background-color: blueviolet;
+    color: #fff;
+}
+
+.current-select-date {
+    display: inline-block;
+    font-size: 16px;
+    color: blueviolet;
+}
+
+.nav-date {
+    padding-top: 12px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-date-calendar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-date .svg-icon {
+    fill: blueviolet;
+    padding-left: 4px;
+}
+
+.svg-icon.calendar-icon {
+    padding: 8px 0 0 12px;
+    width: 22px;
+    height: 22px;
+}
+
+.svg-icon.calendar-icon:hover {
+    padding: 8px 0 0 8px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+}
+
+.nav-date .svg-icon:hover {
+    fill: indigo;
+    padding-left: 0px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+/* .transaction {
+
+} */
+
+.trasactions .list .card {
+    background-color: #fff;
+    border-radius: 20px;
+    margin-bottom: 6px;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.trasactions .list .card .icon-trans {
+    width: 40px;
+    height: 40px;
+}
+
+.trasactions .list .card .trans-info {
+    flex-grow: 2;
+}
+
+.trasactions .list .card .trans-info .trans-type {
+    font-family: "Roboto", sans-serif;
+    font-size: larger;
+    font-weight: 500;
+    font-style: italic;
+    color: indigo;
+}
+
+.trasactions .list .card .trans-values {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.trasactions .list .card .trans-info .name-accaunt,
+.trasactions .list .card .trans-values .trans-date {
+    font-family: "Roboto", sans-serif;
+    font-size: small;
+    font-weight: 400;
+    font-style: normal;
+    color: blueviolet;
+}
+
+.trasactions .list .card .trans-info .trans-accaunt {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.trasactions .list .card .trans-values .trans-value {
+    font-family: "Roboto", sans-serif;
+    font-size: medium;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.trasactions .list .card .trans-values .trans-value.spend {
+    color: red;
+}
+
+.trasactions .list .card .trans-values .trans-value.income {
+    color: rgb(22, 179, 64);
+}
+
+.trasactions .list .card .trans-values .trans-value.transfer {
+    color: blueviolet;
+}
+
+.trasactions .list .card .trans-values .trans-value.target {
+    color: rgb(135, 177, 237);
+}
+
+.trasactions .list .card .trans-values .budget-spend {
+    /* display: none; */
+    font-size: smaller;
+    font-weight: 300;
+    font-style: normal;
+    color: #ceafd7;
+}
+
+.svg-icon-accaunt {
+    width: 16px;
+    height: 16px;
+}
+
+.svg-icon-accaunt.income {
+    fill: rgb(22, 179, 64);
+}
+
+.svg-icon-accaunt.spend {
+    fill: red;
+}
+
+.svg-icon-accaunt.target {
+    fill: rgb(135, 177, 237);
+}
+
+.budget-info {
+    margin-top: 6px;
+    display: flex;
+    justify-content: center;
+    /* display: none; */
+}
+
+#myProgress {
+    width: 60%;
+    background-color: #eccdf5;
+}
+
+#myBar {
+    width: 34%;
+    height: 4px;
+    background-color: green;
+}
+
+.trasactions .list .card.no-pay {
+    padding-top: 30px;
+    /* background-color: #e3c8e7; */
+}
+
+/***************************************************/
+
+.income-extensive-extra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar-container {
+    display: inline-block;
+    background-color: var(--white);
+    border-radius: 35px;
+    /* padding: 0 0; */
+    padding-bottom: 14px;
+    /* margin-top: 1em; */
+}
+
+.calendar-header {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.calendar-header-display {
+    display: flex;
+    align-items: center;
+}
+
+.calendar-header-display p {
+    color: var(--accent);
+    margin: 5px;
+    font-size: 1.4rem;
+    word-spacing: 0.2rem;
+}
+
+pre {
+    padding: 0 10px;
+    margin: 0;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: var(--accent);
+}
+
+.calendar-days,
+.calendar-week {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin: auto;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+.calendar-week div,
+.calendar-days div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.5rem;
+    width: 2.5rem;
+    border-radius: 100%;
+}
+
+.calendar-days div:hover {
+    background: #ebedf0;
+    color: rgb(25, 25, 201);
+    cursor: pointer;
+}
+
+.calendar-week div {
+    opacity: 0.5;
+}
+
+.calendar-current-date {
+    background-color: #0041ff;
+    color: #fff;
+}
+
+/***************************************************/
+
+.display-none {
+    display: none;
+}
